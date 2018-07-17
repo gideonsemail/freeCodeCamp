@@ -1,0 +1,84 @@
+<html>
+    <meta charset="utf-8">   
+    <head> 
+         <link href="/users/admin/freecodeCamp/surveyform.css" rel="stylesheet"/>
+         <title id="title">Survey Form</title>
+    </head>
+    <body>
+        <h1>Survey Form</h1>
+        <main class="main">
+            <div id="description">
+                <p>freeCodeCamp Suggestions for improvement</p>
+            </div>
+            <div class="form">
+                    <form id="survey-form">
+                        <div class="labels">
+                          <label id="name-label" for="name">* Name:</label>
+                          <input type="name" id="name" placeholder="Enter your name" name="Name" required>
+                         <br>
+                        </div>
+                        <div class="labels">
+                         <label id="email-label" for="email">* Email:</label> 
+                         <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                         <br>
+                        </div>
+                        <div class="labels">
+                         <label id="number-field" for="age">* Age:</label>
+                         <input type="number" id="number" min="1" max="99" placeholder="What is your age?"><br>
+                        </div>
+        
+
+                       <div id="currentRole">
+                        <label for="Current role">Whats your current role?</label>
+                           <select id="dropdown" name="currentRole">
+                            <option disabled value>Choose One></option>
+                            <option value="student">Student</option>
+                            <option value="jr">Jr</option>
+                            <option value="Sr">Sr</option>
+                            <option value="Mind your business">Mind Your Business</option>
+                           </Select>
+                       </div>
+
+
+                        <fieldset id="whatimprove">
+                          <legend>What should we improve?</legend>
+                           <input type="radio"  value="1">
+                           <label for="awesome" id="radio1">Nothing you guys rock!</label><br>
+                           
+                           <input type="radio" value="2">
+                              <label for="awesome" id="radio2">Too f&*ing hard!</label><br>
+                                 
+                           <input type="radio" value="3">
+                           <label for="awesome" id="radio3">Too f*@!ng easy</label><br>
+
+                        </fieldset>
+                            <br>
+
+                        <div id="checkmarks">
+                        <fieldset>
+                            <legend>What do we need to work on?</legend>
+                            <input id="checkmarks" type="checkbox"  value="1">
+                            <label>Cool Projects</label><br>
+                            <input id="checkmarks" type="checkbox"  value="2">
+                            <label>Front End</label><br>
+                            <input id="checkmarks" type="checkbox"  value="3">
+                            <label>Back End</label><br>
+                            <input id="checkmarks" type="checkbox"  value="4">
+                            <label>Videos!</label><br>
+                            <input id="checkmarks" type="checkbox"  value="5">
+                            <label>Interactivity</label><br>
+                        </fieldset>
+                        </div>
+                      <div class="comments">
+                        <label for="comments" id="textArea">Enter any additional comments here, please</label> 
+                        <textarea  placeholder="enter comments"></textarea>
+                       </div><br>
+                       <div id="submit">
+                        <input type="submit"  value="Submit">
+                       </div>
+                    </form>
+                    
+            </div>  
+        </main>
+    </body>
+</html>

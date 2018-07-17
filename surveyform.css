@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(15, 109, 109);
+    
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 3em;
+    
+}
+
+.main {
+    border-radius: 5px;
+    background-color: rgb(231, 231, 220);
+    font-size: 20px;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.form {
+    height: 75%;
+}
+
+.labels {
+    margin-bottom: 15px;
+
+}
+
+#name-label {
+    width: 50px;
+
+}
+
+#name {
+    height: 25px;
+    width: 200px;
+}
+
+#email-label {
+
+}
+
+#email {
+    height: 25px;
+    width: 200px;
+
+}
+
+#number-field {
+    padding-left: 10px;
+
+}
+
+#number {
+    height: 25px;
+    width: 200px;
+    
+}
+
+#currentRole {
+    margin-left: -155px;
+    margin-bottom: 25px;
+}
+
+#dropdown {
+    height: 25px;
+    width: 200px;
+    padding-left: 10px;
+}
+
+#whatImprove {
+
+}
+
+#radio1 {
+
+}
+
+#radio2 {
+    padding-right: 50px;
+    
+}
+
+#radio3 {
+    padding-right: 50px;
+    
+}
+
+#checkmarks {
+    
+
+}
+
+.comments {
+
+}
+
+#textArea {
+    height: 50px;
+    width: 1000px;
+}
+#submit {
+
+}

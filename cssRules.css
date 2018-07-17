@@ -1,0 +1,69 @@
+
+/**borders**/
+  
+  border-radius: 2px;
+  border-style: dotted;
+  border-color: black;
+  border-width: 1px;
+
+/**Colors**/  
+  background-color: #a9d7d1;
+  color: white;
+
+/**fonts**/
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  
+/**positioning***/  
+  display: inline-block;
+  display: block;
+  display: flex;
+  position: relative;
+  float: left;
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  max-width: 900px;
+  min-width: 320px;
+ 
+  height: 35px;
+  width: 100%;
+  width: 140px;
+
+  margin: 0 auto;
+  margin: 30px auto;
+  margin: 10px;
+  margin-top: 15px;
+  
+  padding: 5px;
+  padding-bottom: 10px;
+  
+  text-align: center;
+
+  vertical-align: top;
+  vertical-align: middle;
+
+  left: -43px;
+
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+  
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+    
+
