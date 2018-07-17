@@ -1,64 +1,69 @@
 
 /**borders**/
-  
   border-radius: 2px;
   border-style: dotted;
   border-color: black;`
   border-width: 1px;
 
-/**Colors**/  
-  background-color: #a9d7d1;
-  color: white;
-
-/**fonts**/
-  font-size: 2em;
-  font-weight: bold;
-  font-family: 'Raleway', Helvetica, sans-serif;
-  
-/**positioning***/  
+/**positioning***/
 /**Block
-
 Takes up the full width available, with a new line before and after (display:block;)
-
+display: block;
 Inline
-
 Takes up only as much width as it needs, and does not force new lines (display:inline;)**/
-  display: inline-block;
-  display: block;
-  display: flex;
-  position: relative;
-  float: left;
 
+/**inline-bock we’re telling the browser to display the paragraphs inline, but allow them to retain their block-level characteristics. This means we can set a width and height manually and have the two elements remain distinct, but also have them appear next to each other in the document flow**/
+  display: inline-block;
+  /**use in conjunction with display: inline-Block**/
+  vertical-align: top;
+  vertical-align: middle;
+
+/**turns it into a flex container. This makes it possible to align any children of that element into rows or columns. You do this by adding the flex-direction property to the parent item and setting it to row or column. Creating a row will align the children horizontally, and creating a column will align the children vertically**/
   display: flex;
-  width: 100%;
+  /**to wrap items**/
+  flex-wrap: wrap (nowrap, reverse)
+  /**(row is defualt, or could be column, row-reverse etc...)**/
+  flex-direction: row
+  /** on the Y axis, or flex-start, flex-end, space-betwen...**//
   justify-content: center;
+  /**on the X axis**/
+  align-items:
 
   /**Setting the width of a block-level element will prevent it from stretching out to the edges of its container. Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins.
   Using max-width instead, in this situation, will improve the browser's handling of small windows. **/
   max-width: 900px;
   min-width: 320px;
 
-
- 
   height: 35px;
-  width: 100%;
-  width: 140px;
+  width: 100%; 140px
 
+  /**first value "0" and/or "30px" is top and bottom, "auto" refers to horizontal**/
   margin: 0 auto;
   margin: 30px auto;
-  margin: 10px;
+
   margin-top: 15px;
-  
+
+/**How you want the words inside to be from the edge of the container**/
   padding: 5px;
   padding-bottom: 10px;
-  
+
+  /**Colors**/
+    background-color: #a9d7d1;
+    color: white;
+
+  /**fonts**/
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Raleway', Helvetica, sans-serif;
+
+
+
+
+  position: relative;
+  float: left;
+
   text-align: center;
-
-  vertical-align: top;
-  vertical-align: middle;
-
   left: -43px;
-
 
   img {
     display: block;
@@ -66,7 +71,7 @@ Takes up only as much width as it needs, and does not force new lines (display:i
     height: auto;
     margin: auto;
 }
-  
+
 @media screen and (max-width: 833px) {
   .input-field {
     width: 80%;
@@ -75,6 +80,5 @@ Takes up only as much width as it needs, and does not force new lines (display:i
     width: 90%;
   }
 }
-
-    
-
+/* Remove list bullets */
+<ul style="list-style: none;">

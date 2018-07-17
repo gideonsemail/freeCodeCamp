@@ -1,85 +1,109 @@
 <html>
-    <meta charset="utf-8">   
-    <head> 
-         <link href="/users/admin/freecodeCamp/surveyform.css" rel="stylesheet"/>
-         <title id="title">Survey Form</title>
-    </head>
-    <body>
-        <h1>Survey Form</h1>
-        <main class="main">
-            <div id="description">
-                <p>freeCodeCamp Suggestions for improvement</p>
-            </div>
-            <div class="form">
-                    <form id="survey-form">
-                        <div class="labels">
-                          <label id="name-label" for="name">* Name:</label>
-                          <input type="name" id="name" placeholder="Enter your name" name="Name" required>
-                         <br>
-                        </div>
-                        <div class="labels">
-                         <label id="email-label" for="email">* Email:</label> 
-                         <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                         <br>
-                        </div>
-                        <div class="labels">
-                         <label id="number-field" for="age">* Age:</label>
-                         <input type="number" id="number" min="1" max="99" placeholder="What is your age?"><br>
-                        </div>
-        
+<meta charset="utf-8">
 
-                       <div id="currentRole">
-                        <label for="Current role">Whats your current role?</label>
-                           <select id="dropdown" name="currentRole">
-                            <option disabled value>Choose One></option>
-                            <option value="student">Student</option>
-                            <option value="jr">Jr</option>
-                            <option value="Sr">Sr</option>
-                            <option value="Mind your business">Mind Your Business</option>
-                           </Select>
-                       </div>
+<head>
+  <link href="/users/admin/freecodeCamp/surveyform.css" rel="stylesheet" />
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <form id="survey-form" class="main">
+    <div>
+      <p id="description">freeCodeCamp Suggestions for improvement</p>
+    </div>
+    <div class="form">
+      <form id="survey-form">
+        <div class="leftSide">
+          <label for="name">* Name:</label>
+        </div>
+        <div class="rightSide">
+          <input type="name" id="name-label" placeholder="Enter your name" name="Name" required>
+        </div>
+          <br>
+        </div>
+        <div class="row">
+          <div class="leftSide">
+          <label for="email">* Email:</label>
+        </div>
+        <div class="rightSide">
+          <input type="email" id="email-label" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+          <br>
+        </div>
+        <div class="row">
+        <div class="leftSide">
+          <label for="age">* Age:</label>
+        </div>
+        <div class="rightSide">
+          <input type="number" id="number-field" min="1" max="99" placeholder="What is your age?"><br>
+        </div>
+        </div>
+
+        <div class="row">
+         <div class="leftSide">
+          <label for="Current role">Whats your current role?</label>
+         </div>
+         <div class="RightSide">
+          <select id="dropdown" name="currentRole" class="dropdown">
+           <option disabled value>Choose One></option>
+           <option value="student">Student</option>
+           <option value="jr">Jr</option>
+           <option value="Sr">Sr</option>
+           <option value="Mind your business">Mind Your Business</option>
+          </Select>
+        </div>
+        </div>
 
 
-                        
-                          <label id="whatImprove?">What should we improve?</label>
-                           <input type="radio" value="1">
-                           <label for="awesome" id="radio1">Nothing you guys rock!</label><br>
-                           
-                           <input type="radio" value="2">
-                              <label for="awesome" id="radio2">Too f&*ing hard!</label><br>
-                                 
-                           <input type="radio" value="3">
-                           <label for="awesome" id="radio3">Too f*@!ng easy</label><br>
+        <div class="row">
+          <div class="leftSide">
+            <label for="improve">What do we need to improve?</label>
+          </div>
+          <div id="improve" class="rightSide">
+            <ul style="list-style: none;">
+              <li class="radio"><input name="radio-buttons" value="1" type="radio" class="userRatings" ><label>Nothing, you guys rock</label></li>
+              <li class="radio"><input name="radio-buttons" value="2"  type="radio" class="userRatings" ><label>Too f**ing hard</label></li>
+              <li class="radio"><input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label><label>Too f$@ing easy</li>
+            </ul>
+          </div>
+        </div>
 
-                        
-                            <br>
+        <div class="row">
+          <div class="leftSide">
+            <label for="suggestions">What do we need to work on?</label>
+          </div>
+          <div class="rightSide">
+            <input type="checkbox" value="1">
+            <label id="checkmarks1">Cool Projects</label><br>
+            <input type="checkbox" value="2">
+            <label id="checkmarks2">Front End</label><br>
+            <input type="checkbox" value="3">
+            <label id="checkmarks3">Back End</label><br>
+            <input type="checkbox" value="4">
+            <label>Videos!</label>
+            <br>
+            <input type="checkbox" value="5">
+            <label>Interactivity</label><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="leftSide">
+           <label for="comments">Enter any additional comments here, please</label>
+          </div>
+          <div class="RightSide">
+          <div id="textArea">
+          <textarea placeholder="enter comments"></textarea>
+          </div>
+        </div>
+        </div><br>
+        <div id="submit">
+          <button id="submit">Submit</button>
+        </div>
+      </form>
 
-                        <div id="checkmarks">
-                        <fieldset>
-                            <legend>What do we need to work on?</legend>
-                            <input type="checkbox" value="1">
-                            <label id="checkmarks1">Cool Projects</label><br>
-                            <input type="checkbox"  value="2">
-                            <label id="checkmarks2">Front End</label><br>
-                            <input type="checkbox"  value="3">
-                            <label id="checkmarks3">Back End</label><br>
-                            <input type="checkbox"  value="4">
-                            <label id="checkmarks4">Videos!</label>
-                            <br>
-                            <input type="checkbox"  value="5">
-                            <label>Interactivity</label><br>
-                        </fieldset>
-                        </div>
-                      <div class="comments">
-                        <label for="comments" id="textArea">Enter any additional comments here, please</label> 
-                        <textarea  placeholder="enter comments"></textarea>
-                       </div><br>
-                       <div id="submit">
-                        <input type="submit"  value="Submit">
-                       </div>
-                    </form>
-                    
-            </div>  
-        </main>
-    </body>
+    </div>
+  </form>
+</body>
+
 </html>
