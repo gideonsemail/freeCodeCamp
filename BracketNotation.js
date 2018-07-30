@@ -18,10 +18,8 @@ var testObj = {
   "the drink": "water"
 };
 
-// Only change code below this line
-
-var entreeValue = testObj["an entree"];   // Change this line
-var drinkValue = testObj["the drink"];    // Change this line
+var entreeValue = testObj["an entree"];
+var drinkValue = testObj["the drink"];
 
 //Use the playerNumber variable to look up player 16 in testObj using bracket notation. Then assign that name to the player variable.
 
@@ -52,19 +50,22 @@ var myDog = {
  delete myDog.tails;
 
 //Convert the switch statement into an object called lookup. Use it to look up val and assign the associated string to the result variable.
+switch(val) {
+    case "alpha":
+      result = "Adams";
+      break;
+    case "foxtrot":
+      result = "Frank";
+  }
+//Converted to object
  function phoneticLookup(val) {
   var result = "";
 
   var lookup = {
     "alpha": "Adams",
-    "bravo": "Boston",
-    "charlie": "Chicago",
-    "delta": "Denver",
-    "echo": "Easy",
     "foxtrot": "Frank",
   };
   result = lookup[val];
-  // Only change code above this line
   return result;
 }
 phoneticLookup("charlie");

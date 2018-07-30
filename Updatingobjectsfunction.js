@@ -1,7 +1,6 @@
 //You are given a JSON object representing (a small part of) your record collection. Each album is identified by a unique id number and has several properties. Not all albums have complete information.
 
 //Write a function which takes an id, a property (prop), and a value.
-
 // Setup
 var collection = {
     "2548": {

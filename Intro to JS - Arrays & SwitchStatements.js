@@ -110,7 +110,6 @@ chainToSwitch(7);
 Basic JavaScript: Counting Cards
 You will write a card counting function. It will receive a card parameter, which can be a number or a string, and increment or decrement the global count variable according to the card's value (see table**/
 var count = 0;
-
 function cc(card) {
   // Only change code below this line
     switch(card) {
