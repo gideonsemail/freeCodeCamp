@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    margin: 30px;
+} 
+
+h1 {
+    display: flex;
+    font-size: 56px; 
+    font-family: sans-serif;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    font-style: italic;
+    justify-content: center;
+}
+
+#main {
+    margin: 30px auto;
+}
+
+#img-div {
+display: flex;
+width: 100%;
+justify-content: center;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#img-caption {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+p {
+    padding: 10px;
+}
+
+#tribute-info {
+    background-color: rgb(229, 234, 238);
+    border-style: dotted;
+    border-color: black;
+    border-width: 1px;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}

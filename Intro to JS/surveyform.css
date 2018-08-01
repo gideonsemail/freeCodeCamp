@@ -1,0 +1,181 @@
+body {
+    background-color: rgb(15, 109, 109);
+    text-align: center;
+    min-width: 310px;
+
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 3em;
+}
+
+.main {
+    border-radius: 5px;
+    width: 75%;
+    padding: 10px;
+    background-color: rgb(231, 231, 220);
+    font-size: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+/**new classes below**/
+.row {
+
+}
+
+.leftSide {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+
+}
+
+.rightSide {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: bottom;
+
+}
+/***new classes above**/
+.form {
+
+}
+
+.labels {
+    margin-bottom: 15px;
+
+}
+
+#name-label {
+    width: 50px;
+
+}
+
+#name {
+    height: 25px;
+    width: 200px;
+}
+
+#email-label {
+
+}
+
+#email {
+    height: 25px;
+    width: 200px;
+
+}
+
+#number-field {
+    padding-left: 10px;
+
+}
+
+#number {
+    height: 25px;
+    width: 200px;
+
+}
+
+#currentRole {
+    margin-left: -155px;
+    margin-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+#dropdown {
+    margin-top:15px;
+    height: 25px;
+    width: 200px;
+    padding-left: 10px;
+}
+
+#improve {
+    margin-right: 80px;
+
+}
+
+
+#radio1 {
+
+}
+
+#radio2 {
+    padding-right: 50px;
+
+}
+
+#radio3 {
+    padding-right: 50px;
+
+}
+
+#checkmarks {
+    width: 100%;
+
+}
+
+#checkmarks1 {
+    padding-left: 0px;
+}
+
+#checkmarks2 {
+    margin-left: 0px;
+}
+
+#checkmarks3 {
+    padding-left: 0px;
+}
+
+#checkmarks4 {
+    padding-left: 0px;
+}
+
+.comments {
+
+}
+
+#textArea {
+    margin: 25px;
+    height: 100px;
+    width: 1000px;
+}
+
+textarea {
+    height: 70px;
+    width: 200px;
+    margin-left: -20px;
+}
+
+#submit {
+  heght: 25px;
+  color: rgb(69, 82, 84);
+  font-size: 23px;
+  margin-top:-20px;
+  border-radius: 10px;
+
+}
+
+@media screen and (max-width: 520px) {
+  .row {
+    width: 100%;
+    text-align: left;
+  }
+  .rightSide {
+    width: 80%;
+    float: left;
+  }

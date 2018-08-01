@@ -1,0 +1,109 @@
+<html>
+<meta charset="utf-8">
+
+<head>
+  <link href="/users/admin/freecodeCamp/surveyform.css" rel="stylesheet" />
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <form id="survey-form" class="main">
+    <div>
+      <p id="description">freeCodeCamp Suggestions for improvement</p>
+    </div>
+    <div class="form">
+      <form id="survey-form">
+        <div class="leftSide">
+          <label for="name">* Name:</label>
+        </div>
+        <div class="rightSide">
+          <input type="name" id="name-label" placeholder="Enter your name" name="Name" required>
+        </div>
+          <br>
+        </div>
+        <div class="row">
+          <div class="leftSide">
+          <label for="email">* Email:</label>
+        </div>
+        <div class="rightSide">
+          <input type="email" id="email-label" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+          <br>
+        </div>
+        <div class="row">
+        <div class="leftSide">
+          <label for="age">* Age:</label>
+        </div>
+        <div class="rightSide">
+          <input type="number" id="number-field" min="1" max="99" placeholder="What is your age?"><br>
+        </div>
+        </div>
+
+        <div class="row">
+         <div class="leftSide">
+          <label for="Current role">Whats your current role?</label>
+         </div>
+         <div class="RightSide">
+          <select id="dropdown" name="currentRole" class="dropdown">
+           <option disabled value>Choose One></option>
+           <option value="student">Student</option>
+           <option value="jr">Jr</option>
+           <option value="Sr">Sr</option>
+           <option value="Mind your business">Mind Your Business</option>
+          </Select>
+        </div>
+        </div>
+
+
+        <div class="row">
+          <div class="leftSide">
+            <label for="improve">What do we need to improve?</label>
+          </div>
+          <div id="improve" class="rightSide">
+            <ul style="list-style: none;">
+              <li class="radio"><input name="radio-buttons" value="1" type="radio" class="userRatings" ><label>Nothing, you guys rock</label></li>
+              <li class="radio"><input name="radio-buttons" value="2"  type="radio" class="userRatings" ><label>Too f**ing hard</label></li>
+              <li class="radio"><input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label><label>Too f$@ing easy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="leftSide">
+            <label for="suggestions">What do we need to work on?</label>
+          </div>
+          <div class="rightSide">
+            <input type="checkbox" value="1">
+            <label id="checkmarks1">Cool Projects</label><br>
+            <input type="checkbox" value="2">
+            <label id="checkmarks2">Front End</label><br>
+            <input type="checkbox" value="3">
+            <label id="checkmarks3">Back End</label><br>
+            <input type="checkbox" value="4">
+            <label>Videos!</label>
+            <br>
+            <input type="checkbox" value="5">
+            <label>Interactivity</label><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="leftSide">
+           <label for="comments">Enter any additional comments here, please</label>
+          </div>
+          <div class="RightSide">
+          <div id="textArea">
+          <textarea placeholder="enter comments"></textarea>
+          </div>
+        </div>
+        </div><br>
+        <div id="submit">
+          <button id="submit">Submit</button>
+        </div>
+      </form>
+
+    </div>
+  </form>
+</body>
+
+</html>
