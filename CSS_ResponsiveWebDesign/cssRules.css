@@ -1,5 +1,5 @@
 
-/**borders**/
+/**borders******************************************************/
   border-radius: 2px;
   border-style: dotted;
   border-color: black;
@@ -18,20 +18,38 @@ Takes up only as much width as it needs, and does not force new lines (display:i
   vertical-align: top;
   vertical-align: middle;
 
+
+/**Flex******************************************************/
+
+
 /**turns it into a flex container. This makes it possible to align any children of that element into rows or columns. You do this by adding the flex-direction property to the parent item and setting it to row or column. Creating a row will align the children horizontally, and creating a column will align the children vertically**/
   display: flex;
-  /**to wrap items**/
+/**to wrap items**/
   flex-wrap: wrap (nowrap, reverse)
-  /**(row is defualt, or could be column, row-reverse etc...)**/
-  flex-direction: row
-  /** on the Y axis, or flex-start, flex-end, space-betwen...**//
-  /**which aligns all the flex items to the center inside the flex container**/
-  /**on Y axis**/
-  justify-content: center;
-  /**on the X axis**/
-  align-items:
-  space-between
-  space-around
+/**(row is defualt, or could be column, row-reverse etc...)**/
+/** flex-direction switches the main-axis**/
+  flex-direction: row, or column
+/**flex-flow is a short hand for flex-direction and flex-wrap, allowing you to specify both of them using just one property name.**/
+
+/**remember that justify-content works along the main-axis, and flex-direction switches the main-axis.**/
+  justify-content:
+/**You have five commands at your disposal to use justify-content:
+Flex-start
+Flex-end
+Center
+Space-between
+Space-around
+
+/**Justify-content for the main axis. Align items for the cross axison the cross axis**/
+/**You have five commands at your disposal to use align-items**/
+align-items:
+Flex-start
+Flex-end
+Center
+stretch
+baseline
+
+/**Align-self allows you to manually manipulate the alignment of one particular element.It’s basically overriding align-items for one square.**/
 
 
   /**Setting the width of a block-level element will prevent it from stretching out to the edges of its container. Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins.
@@ -62,8 +80,6 @@ Takes up only as much width as it needs, and does not force new lines (display:i
     font-family: 'Raleway', Helvetica, sans-serif;
 
 
-
-
   position: relative;
   float: left;
 
@@ -87,5 +103,7 @@ max-width: 57px;(or 100px, 50px etc...)
     width: 90%;
   }
 }
-/* Remove list bullets */
+
+
+/* TO Remove list bullets */
 <ul style="list-style: none;">
