@@ -1,6 +1,6 @@
 //Steve Griffith YT tutiral on reduce examples below
 
-}Let numbers = [12, 34, 56, 78, 91];
+Let numbers = [12, 34, 56, 78, 91];
 //find the sum of all numbers
 
 //Takes the callback function, and the initial value(which is “0” in this case)
