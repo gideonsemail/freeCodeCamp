@@ -24,6 +24,7 @@ let user = {
 function addFriend(userObj, friend) {
   // change code below this line
 
+
   // change code above this line
 }
 console.log(addFriend(user, 'Pete'));

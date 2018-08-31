@@ -37,7 +37,8 @@ function updateRecords(id, prop, value) {
    if(collection[id][prop]) {
     collection[id][prop].push(value);
    }
-  //If that first check doesn’t pass, it next checks only if value isn’t a blank string. If that test passes, either a new key (prop) and value (value) are added to the object, or an existing key is updated if the prop already exists.
+  //If that first check doesn’t pass, it next checks only if value isn’t a blank string.
+  //If that test passes, either a new key (prop) and value (value) are added to the object, or an existing key is updated if the prop already exists.
    else {
     collection[id][prop]=[value];
    }

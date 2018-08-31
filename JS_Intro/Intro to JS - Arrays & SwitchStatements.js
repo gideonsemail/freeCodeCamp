@@ -63,6 +63,7 @@ switchOfStuff(1);
 
 function sequentialSizes(val) {
   var answer = "";
+
   // Only change code below this line
   switch(val) {
     case 1:

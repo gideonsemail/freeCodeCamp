@@ -66,7 +66,6 @@ function filteredArray(arr, elem) {
   let newArr = [];
   // change code below this line
 
-  }
   // change code above this line
   return newArr;
 }
@@ -86,7 +85,8 @@ function filteredArray(arr, elem) {
   return newArr;
 }
 
-//We have defined a variable, myNestedArray, set equal to an array. //Modify myNestedArray, using any combination of strings, numbers, and booleans for data elements, so that it has
+//We have defined a variable, myNestedArray, set equal to an array.
+ //Modify myNestedArray, using any combination of strings, numbers, and booleans for data elements, so that it has
 //exactly five levels of depth (remember, the outer-most array is level 1).
 //Somewhere on the third level, include the string 'deep',
 // on the fourth level, include the string 'deeper',

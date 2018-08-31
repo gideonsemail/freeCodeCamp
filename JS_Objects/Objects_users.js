@@ -29,12 +29,11 @@ function countOnline(obj) {
 console.log(countOnline(users));
 
 
-
-//SOlution
-let n = 0;
+//Solution
+let n=0;
 	for (let user in obj) if (obj[user].online) n++;
 	return n;
-//ALternativesolution
+//Alternativesolution
 function countOnline(obj) {
   // change code below this line
   let usersOnline = 0;

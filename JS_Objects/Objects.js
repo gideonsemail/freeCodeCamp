@@ -13,7 +13,6 @@ let foods = {
 
 console.log(foods);
 
-
 //We've defined a function, checkInventory, which receives a scanned item as an argument.
 // Return the current value of the scannedItem key in the foods object. You can assume that only valid keys will be provided as an argument to checkInventory.
 let foods = {
@@ -42,8 +41,8 @@ return foods[scannedItem];
 
 let users = {
   Alan: {
-    age: 27,
-    online: true
+  age: 27,
+  online: true
   },
   Jeff: {
     age: 32,
@@ -61,6 +60,7 @@ let users = {
 
 function isEveryoneHere(obj) {
   // change code below this line
+
 
   // change code above this line
 }

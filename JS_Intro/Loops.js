@@ -44,6 +44,7 @@ function multiplyAll(arr) {
 multiplyAll([[1,2],[3,4],[5,6,7]]);
 
 /*****************While Loops****************/
+
 //Before, modify this while loop so the code runs at least once
 var myArray = [];
 var i = 10;

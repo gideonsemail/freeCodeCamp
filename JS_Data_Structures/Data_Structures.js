@@ -49,7 +49,8 @@ console.log(sumOfTen([2, 5, 1, 5, 2, 1]));
 //Solution
   arr.splice(1,2);//changed this line
 
-//We have defined a function, htmlColorNames, which takes an array of HTML colors as an argument. Modify the function using splice() to remove the first two elements of the array and add 'DarkSalmon' and 'BlanchedAlmond' in their respective places.
+//We have defined a function, htmlColorNames, which takes an array of HTML colors as an argument.
+//Modify the function using splice() to remove the first two elements of the array and add 'DarkSalmon' and 'BlanchedAlmond' in their respective places.
 //original
 function htmlColorNames(arr) {
   // change code below this line
