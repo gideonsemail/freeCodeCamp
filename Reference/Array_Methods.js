@@ -1,7 +1,8 @@
 //MAP METHOD: transform every item in the array according to some logic
 
 [1,2].map(it => it * 2) //[2,4]
-[1,2].map(it => ({ it: it * 2}) //[{ 1:2 }, { 2:4 }]
+[1,2].map(it => ({ it: it * 2})
+ //[{ 1:2 }, { 2:4 }]
 
 /*****************************************************************/
 
@@ -9,7 +10,7 @@
 
 //The normal filter method uses a callback function as the 1st parameter. The callback function normally has 1 to 3 arguments, with the 1st argument representing the current element being iterated over.
 
-//filter uses the function its passed in simply to decide whether or not include the element in the returned array and does not transform the element in any way
+//filter uses the function its passed in simply to decide whether or not to include the element in the returned array and does not transform the element in any way.
 
 //Transforming the newly returned array is then your responsibility after the filter, perhaps by using a map or a forEach or however else you choose
 
@@ -112,3 +113,21 @@ numbers.some(function(currentValue) {
 // Returns true
 
 /*************************************************************/
+
+//REPLACE Method
+
+//REPLACE Method
+function titleCase(str) {
+  return str.toLowerCase().split(' ').map(function(word) {
+    /* Map process
+    1st word: "i'm" => word.replace(word[0], word[0].toUpperCase());
+                       "i'm".replace("i", "I");
+                       return word => "I'm"
+    ...
+    5th word: "pot" => word.replace(word[0], word[0].toUpperCase());
+                       "pot".replace("p", "P");
+                       return word => "Pot"*/
+    return word.replace(word[0], word[0].toUpperCase());
+  }).join(' ');
+}
+titleCase("I'm a little tea pot");
