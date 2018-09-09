@@ -45,18 +45,3 @@ app.get('/json', function (req,res) {
     }
  return res.json(data);
 });
-
-/*************Root Level Request Logger************/
-
-//The challenge asks you to implement a root-level logger middleware.Let’s break it down into pieces:
-
-//A) root-level logger middleware. :
-//Basically it means that you should implement a “function” triggered by incoming requests regardless of the path the request is directed to. A “function” executed ‘during the travel’ of your request to the response.
-
-//B)For every request, it should log in the console a string taking the following format: method path - ip
-
-var string = req.method + ' ' + req.path + ' - ' + req.ip;
-app.use(express.static(function(req, res, next) {
-console.log(req.method, req.path,req.ip);
-next();
-}))

@@ -16,7 +16,32 @@ app.use(function (req, res, next) {
   next();
 });
 
-/*************Root Level Request Logger************/
+/*************CHain Middleware to create time server************/
 
 //Middleware can be mounted at a specific route using app.METHOD(path, middlewareFunction).
 //Middleware can also be chained inside route definition.
+
+//In the route app.get('/now', ...) chain a middleware function and the final handler.
+// In the middleware function you should add the current time to the request object in the req.time key. You can use new Date().toString().
+// In the handler, respond with a JSON object, taking the structure {time: req.time}.
+
+
+app.get('/now', function(req, res, next) {
+req.time = new Date().toString()
+next();
+}, function(req, res) {
+res.json(){time: req.time});
+})
+
+
+
+/*************Get Route Parameter input from Client************/
+
+//Build an echo server, mounted at the route GET /:word/echo. //Respond with a JSON object, taking the structure {echo: word}. //You can find the word to be repeated at req.params.word.
+
+//You can test your route from your browser's address bar, visiting some matching routes, e.g. your-app-rootpath/freecodecamp/echo
+
+app.get('/:word/echo', function(req, res, next) {
+res.json({echo: req.params.word});
+next()
+})
