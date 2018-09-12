@@ -21,8 +21,7 @@ app.route('/name').get((req, res) => {
 /*************Use body-parser for POST Requests************/
 
 //In this exercise we will use an urlencoded body.
-
-//The middleware to handle url encoded data is returned by bodyParser.urlencoded({extended: false}). extended=false is a configuration option that tells the parser to use the classic encoding. When using it, values can be only strings or arrays. The extended version allows more data flexibility, but it is outmatched by JSON.
+//The middleware to handle url encoded data is returned by bodyParser.urlencoded({extended: false}).
 // Pass to app.use() the function returned by the previous method call.
 
 //Solution
