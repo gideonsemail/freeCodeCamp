@@ -1,0 +1,34 @@
+// Declare a store variable and assign it to the createStore() method, passing in the reducer as an argument.
+
+//SOlution
+const reducer = (state = 5) => {
+  return state;
+}
+
+// Redux methods are available from a Redux object
+// For example: Redux.createStore()
+// Define the store here:
+const store = Redux.createStore(reducer)// SOlution
+
+// The Redux store object provides several methods that allow you to interact with it. For example, you can retrieve the current state held in the Redux store object with the getState() method.
+const store = Redux.createStore(
+  (state = 5) => state
+);
+
+// change code below this line
+let currentState = store.getState()// SOlution
+
+//CHALLENGE 3
+//Writing a Redux action is as simple as declaring an object with a type property. Declare an object action and give it a property type set to the string 'LOGIN'.
+let action = {
+  type : 'LOGIN'
+}
+
+//Define a function named actionCreator() that returns the action object when called.
+const action = {
+  type: 'LOGIN'
+}
+// Define an action creator here:
+function actionCreator() {
+  return action
+}
