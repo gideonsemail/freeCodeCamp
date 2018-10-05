@@ -1,0 +1,83 @@
+
+//The code editor has a store, actions, and action creators set up for you. Fill in the reducer function to handle multiple authentication actions.
+//Use a JavaScript switch statement in the reducer to respond to different action events. This is a standard pattern in writing Redux reducers. The switch statement should switch over action.type and return the appropriate authentication state.
+
+//Actions
+const defaultState = {
+  authenticated: false
+};
+
+//Reducer Function
+const authReducer = (state = defaultState, action) => {
+  // change code below this line
+  switch(action.type) {
+    case 'LOGIN':
+        return {authenticated: true}
+        break;
+    case 'LOGOUT':
+        return {authenticated: false}
+        break;
+    default:
+        return state;
+}
+  // change code above this line
+};
+
+//Store
+const store = Redux.createStore(authReducer);
+
+//Action Creators
+const loginUser = () => {
+  return {
+    type: 'LOGIN'
+  }
+};
+const logoutUser = () => {
+  return {
+    type: 'LOGOUT'
+  }
+};
+
+/********************************************************************/
+//A common practice when working with Redux is to assign action types as read-only constants, then reference these constants wherever they are used. You can refactor the code you're working with to write the action types as const declarations.
+
+//Declare LOGIN and LOGOUT as const values and assign them to the strings 'LOGIN' and 'LOGOUT', respectively. Then, edit the authReducer() and the action creators to reference these constants instead of string values.
+
+// change code below this line
+const LOGIN = 'LOGIN'
+const LOGOUT = 'LOGOUT'
+// change code above this line
+
+const defaultState = {
+  authenticated: false
+};
+
+const authReducer = (state = defaultState, action) => {
+
+  switch (action.type) {
+    case LOGIN:
+      return {
+        authenticated: true
+      }
+    case LOGOUT:
+      return {
+        authenticated: false
+      }
+    default:
+      return state;
+  }
+};
+
+const store = Redux.createStore(authReducer);
+
+const loginUser = () => {
+  return {
+    type: LOGIN
+  }
+};
+const logoutUser = () => {
+  return {
+    type: LOGOUT
+  }
+};
+          
